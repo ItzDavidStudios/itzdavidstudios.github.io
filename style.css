@@ -1,0 +1,36 @@
+.button {
+  background-image: linear-gradient(#FFFF00, #E5E500);
+  border:;
+  border-radius: 4px;
+  color: #000000;
+  font-family: Arial, serif !important;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.button:hover {
+  background-image: linear-gradient(#FFFF4D, #FFFF00);
+  border-color:;
+  text-decoration: none;
+}
+
+.button:active {
+  background-image: linear-gradient(#E5E500, #BDBD00);
+  border-color:;
+  outline: none;
+}
+
+.hr {
+  border: 0;
+  width: 0px;
+  color: #655739;
+  background-color: #655739;
+  height: 1px;
+}
