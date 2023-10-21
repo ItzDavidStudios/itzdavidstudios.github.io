@@ -1,0 +1,28 @@
+.sr {
+  background-image: linear-gradient(#FFFFFF, #E6E6E6);
+  border:;
+  border-radius: 4px;
+  color: #000000;
+  font-family: Times New Roman, serif !important;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.sr:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.sr:hover {
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  border-color:;
+  text-decoration: none;
+}
+
+.sr:active {
+  background-image: linear-gradient(#E6E6E6, #D1D1D1);
+  border-color:;
+  outline: none;
+}
