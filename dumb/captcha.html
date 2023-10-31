@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAPTCHA??</title>
+    <link rel="shortcut icon" type="image/png" href="/website/img/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cap.css">
+    <script src="captch.js"></script>
+</head>
+ 
+<body onload="generate()">
+  <h2>WOW A CAPTCHA!?!?! AIJALJDHADSPIJAOJDBSUIFA</h2>
+   <p><font size="4">all you can literally do is to play with it<br>
+                     of course this is meant to be a fucking joke</p>
+    <div id="user-input" class="inline">
+        <input type="text"
+               id="submit"
+               placeholder="type the text you hear or see" />
+    </div>
+ 
+    <div class="inline" onclick="generate()">
+        <i class="fas fa-sync"></i>
+    </div>
+ 
+    <div id="image"
+         class="inline"
+         selectable="False">
+    </div>
+
+    <input type="submit"
+           id="btn"
+           onclick="printmsg()" /><br>
+
+<audio src="funny.mp3" controls></audio>
+ 
+    <p id="key"></p>
+</body>
+</html>
