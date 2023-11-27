@@ -113,3 +113,32 @@
   border-color:;
   outline: none;
 }
+
+.insta {
+  background-image: linear-gradient(#FF0078, #DE0069);
+  border:;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: Arial, serif !important;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.insta:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.insta:hover {
+  background-image: linear-gradient(#FF459D, #FF0079);
+  border-color:;
+  text-decoration: none;
+}
+
+.insta:active {
+  background-image: linear-gradient(#DE0069, #B10054);
+  border-color:;
+  outline: none;
+}
