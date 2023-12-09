@@ -142,3 +142,32 @@
   border-color:;
   outline: none;
 }
+
+.ro {
+  background-image: linear-gradient(#E0E0E0, #AFAFAF);
+  border:;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: Arial, serif !important;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.ro:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.ro:hover {
+  background-image: linear-gradient(#ECECEC, #E0E0E0);
+  border-color:;
+  text-decoration: none;
+}
+
+.ro:active {
+  background-image: linear-gradient(#AFAFAF, #919191);
+  border-color:;
+  outline: none;
+}
