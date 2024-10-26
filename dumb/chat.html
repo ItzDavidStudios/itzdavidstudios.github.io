@@ -1,36 +1,59 @@
-<!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>great chatbot</title>
     <link rel="shortcut icon" type="image/png" href="/website/img/favicon.png">
-    <link rel="stylesheet" href="uhh.css">
+    <link rel="stylesheet" href="fartbot.css">
 </head>
+ 
 <body>
-    <div class="chatbot-container">
-        <div id="header">
-            <h1>Chat with David</h1>
+
+<style>
+.alert {
+  padding: 10px;
+  background-color: #ffc400;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <span>&#9888;</span> unfinished rework, may or may not work on this and finish sometime
+</div>
+
+    <div class="chatBot">
+        <header>
+            <h2>The David Chatbot</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat-incoming chat">
+                <p>hello, i'm David</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea rows="0" cols="17"
+                      placeholder="send a fuckin message"></textarea>
+            <button id="sendBTN">send</button>
         </div>
-        <div id="chatbot">
-            <div id="conversation">
-              <div class="chatbot-message">
-                <p class="chatbot-text">hello my name is David</p>
-              </div>
-            </div>
-            <form id="input-form">
-              <message-container>
-                <input id="input-field" type="text" placeholder="type yer message here">
-                <button id="submit-button" type="submit">
-                </button>
-              </message-container>
-                
-            </form>
-        </div>  
-
     </div>
-
-    <script src="shitter.js"></script>
+    <script src="shitter.js" defer></script>
 </body>
+ 
 </html>
