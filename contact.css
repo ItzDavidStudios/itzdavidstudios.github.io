@@ -56,8 +56,37 @@
   outline: none;
 }
 
+.bsky {
+  background-image: linear-gradient(#59bfff, #599cff);
+  border:;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: Arial, serif !important;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.bsky:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.bsky:hover {
+  background-image: linear-gradient(#79c7f7, #6ea8ff);
+  border-color:;
+  text-decoration: none;
+}
+
+.bsky:active {
+  background-image: linear-gradient(#2baeff, #146cfa);
+  border-color:;
+  outline: none;
+}
+
 .da {
-  background-image: linear-gradient(#00DD32, #00C32C);
+  background-image: linear-gradient(#3396ff, #59cbff);
   border:;
   border-radius: 4px;
   color: #FFFFFF;
