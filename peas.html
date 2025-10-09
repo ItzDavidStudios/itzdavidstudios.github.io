@@ -6,17 +6,17 @@
   <meta content="david" property="og:title" />
   <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
   <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
-  <title>awesome</title>
+  <title>this page is useless bruv</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
-  <link href="things.css" rel="stylesheet" type="text/css" media="all">
+  <link href="peanuts.css" rel="stylesheet" type="text/css" media="all">
  </head>
-<body background="img/bg_stuff.jpg">
+<body background="img/bg_peas.jpg">
 <style>
 body {
-  background-image: url("img/bg_stuff.jpg");
+  background-image: url("img/bg_peas.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -36,20 +36,42 @@ body {
 <div class="content">
  <div class="content narrow">
   <div class="tile">
-   <h1>my creations and other stuff!!</h1>
-   <p>all of my other things, nothing else to say</p>
-   <p>just take a look at my awesome stuff!</p><br>
-   <p><i>any of these will update as time goes on</i></p><br>
+   <h1>simple peas counter</h1>
+    <p>simply click the button below as much as you can! how much can you do?</p>
+    <p>one of my friends wanted this lol</p><br>
+    <p><i>for some reason the audio that's supposed to play doesn't work on click, will probably fix it soon</i></p><br>
 
-  <a href="art.html"><button type="button" class="art medium">Art Gallery</button></a>
-  <a href="farta.html"><button type="button" class="farta medium">Sparta Remixes</button></a>
-  <a href="music.html"><button type="button" class="music medium">My Music</button></a>
-  <a href="gd.html"><button type="button" class="gd medium">Actual GD levels I made</button></a>
-  <a href="friends.html"><button type="button" class="friends medium">Hall of Fame</button></a>
-  <a href="peas.html"><button type="button" class="peas medium">peas counter</button></a>
+    <button type="button" id="btn" onclick="multipleActions()" class="peas small">i həte you peas</button>
+    <h3>number of peas:</h3>
+    <h2 id="count">0</h2>
   </div>
  </div>
 </div>
+<script type="text/javascript">
+    let c = 0, ci = 0, cd = 0;
+    const count = document.getElementById("count");
+    const incCount = document.getElementById("incCount");
+    const decCount = document.getElementById("decCount");
+    function inc() {
+        c++;
+        ci = (ci >= 10) ? 0 : ci + 1;
+        update();
+     }
+     function update() {
+       count.textContent = c;
+       incCount.textContent = ci;
+       decCount.textContent = cd;
+     }
+
+     const audio = audio.play;
+     audio.src="i_hete_you_peas.mp3";
+
+function multipleActions() {
+  inc();
+  audio.play();
+}
+
+</script>
 <footer></footer>
 </center>
 </body>
