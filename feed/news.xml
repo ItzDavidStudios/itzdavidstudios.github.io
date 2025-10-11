@@ -6,8 +6,32 @@
 <description>news and updates and random shit about the davidstudios website</description>
 <link>https://itzdavidstudios.github.io/news.html</link>
 <language>en-us</language>
-<pubDate>Sat, 11 Oct 2025 22:55:42 GMT</pubDate>
+<pubDate>Sat, 11 Oct 2025 23:19:52 GMT</pubDate>
 <managingEditor>david</managingEditor>
+
+<item>
+<title>just a small site update...</title>
+<description><![CDATA[<h1>
+	<font color="000000">just a small site update...</font></h1>
+<p>
+	<font color="000000">what&#39;s the small site update in question you may ask? well, there&#39;s a few:<br />
+	you can now submit your art for me on the fanart page, either via e-mail or one of my contacts</font></p>
+<p>
+	<font color="000000">you can now subscribe to RSS feeds on certain pages<br />
+	if you don&#39;t know what RSS is and how to &quot;subscribe&quot; to feeds, go to the home page and you&#39;ll see smth about feeds n shit at the bottom, then click on that lil tutorial i made</font></p>
+<p>
+	<font color="000000">and finally, i changed the meta descriptions and titles (whatever the fuck you call them) for every page,<br />
+	as well as updating David&#39;s and FMAJ&#39;s bios a bit, see them for yourself</font></p>
+<p>
+	<font color="000000">that&#39;s all for now, thank you for coming to my ted talk</font></p>
+<p>
+	<font color="000000">- David ₍^. .^₎⟆</font></p>
+]]></description>
+<link>https://itzdavidstudios.github.io/posts/post2.html</link>
+<author>david</author>
+<guid  isPermaLink="false">8e07812a-13d3-4570-855f-57302be98229</guid>
+<pubDate>Sat, 11 Oct 2025 23:19:50 GMT</pubDate>
+</item>
 
 <item>
 <title>new website overhaul!</title>
@@ -33,7 +57,7 @@
 <link>https://itzdavidstudios.github.io/posts/post1.html</link>
 <author>david</author>
 <guid  isPermaLink="false">4963ee65-4a5b-495a-8b8a-cbc9e9941bae</guid>
-<pubDate>Sat, 11 Oct 2025 22:55:36 GMT</pubDate>
+<pubDate>Sat, 11 Oct 2025 23:19:46 GMT</pubDate>
 </item>
 </channel>
 </rss>
