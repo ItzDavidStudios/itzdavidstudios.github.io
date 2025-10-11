@@ -3,14 +3,16 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="david" property="og:title" />
-  <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
-  <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
+  <meta content="news - davidstudios" property="og:title" />
+  <meta content="news and updates and random shit about the davidstudios website" property="og:description" />
+  <meta name="description" content="news and updates and random shit about the davidstudios website">
+  <meta content="https://itzdavidstudios.github.io/fanart/gangster.jpg" property="og:image" />
   <title>NOT a blog btw</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_news.jpg">
 <style>
@@ -37,7 +39,29 @@ body {
   <div class="tile">
    <h1>news page or something</h1>
    <p>here you'll see what i'm up to, whether it's new updates, or like i said just random shit that i'm up to</p>
-   <p>i probably won't post often so don't expect a lot from here</p>
+   <p>i probably won't post often so don't expect a lot from here</p><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
+  </div>
+ </div>
+</div>
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/news.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest posts of me yapping"
+        );
+      });
+     }
+</script>
+<div class="content">
+ <div class="content narrow">
+  <div class="tile">
+   <h2><a href="posts/post2.html">just a small site update...</a></h2>
+   <p><i>posted on 11/10/2025</i></p>
   </div>
  </div>
 </div>

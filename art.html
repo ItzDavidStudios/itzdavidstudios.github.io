@@ -3,15 +3,17 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="david" property="og:title" />
-  <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
-  <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
+  <meta content="art gallery - davidstudios" property="og:title" />
+  <meta content="all of my drawings throughout the years" property="og:description" />
+  <meta name="description" content="all of my drawings throughout the years">
+  <meta content="https://itzdavidstudios.github.io/fanart/gangster.jpg" property="og:image" />
   <title>le epic art gallery</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
   <link href="things.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_art.jpg">
 <style>
@@ -47,11 +49,24 @@ body {
    <p>or if you want to see fanart of said characters, <a href="fanart.html">click here</a></p><br>
    <p><i>note: the gallery is ordered from newest to oldest</i></p>
    <p><i>another note: all dates are DD/MM/YYYY, day goes first you stupid fucks</i></p>
-   <p><i>another ANOTHER note: this is a large page, which may or may not cause lag depending on your device, scroll down with caution</i></p>
+   <p><i>another ANOTHER note: this is a large page, which may or may not cause lag depending on your device, scroll down with caution</i></p><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
   </div>
  </div>
 </div>
-
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/art.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest drawings by david"
+        );
+      });
+     }
+</script>
 <h1>2025</h1><br>
 
 <div class="columns three">

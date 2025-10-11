@@ -3,14 +3,17 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="david" property="og:title" />
-  <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
-  <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
+  <meta content="fanart - davidstudios" property="og:title" />
+  <meta content="drawings of my characters made by awesome people" property="og:description" />
+  <meta name="description" content="drawings of my characters made by awesome people">
+  <meta content="https://itzdavidstudios.github.io/fanart/gangster.jpg" property="og:image" />
   <title>david cool fan art</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
+  <link href="comment.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_fanart.jpg">
 <style>
@@ -37,11 +40,25 @@ body {
   <div class="tile">
    <h1>fanart from people</h1>
    <p>a page dedicated to people who have drawn my characters, i'm running out of shit to say</p>
-   <p>as for now, i don't have a lot of fanarts unfortunately, maybe more will come out soon</p>
+   <p>as for now, i don't have a lot of fanarts unfortunately, maybe more will come out soon</p><br>
+   <a href="fanartmail.html"><button type="button" class="comments small">click here to submit fanart!</button></a><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
   </div>
  </div>
 </div>
-
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/fanart.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest fan arts"
+        );
+      });
+     }
+</script>
 <div class="columns three">
  <div class="tile img">
   <a href="fanart/davidbucks.jpg">

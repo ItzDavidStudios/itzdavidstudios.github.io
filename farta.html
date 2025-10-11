@@ -3,15 +3,17 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="david" property="og:title" />
-  <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
-  <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
+  <meta content="sparta remixes - davidstudios" property="og:title" />
+  <meta content="list of sparta remixes i've done because Yeah" property="og:description" />
+  <meta name="description" content="list of sparta remixes i've done because Yeah">
+  <meta content="https://itzdavidstudios.github.io/fanart/gangster.jpg" property="og:image" />
   <title>LOLZ FUNNI OLD INTERNET MEME!!!! XD 0_o</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
   <link href="things.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_farta.jpg">
 <style>
@@ -40,11 +42,24 @@ body {
    <p>spartas that i made over the years</p>
    <p>because i pretty much love old internet memes</p>
    <p>feel free to watch 'em (there's a shit ton)</p><br>
-   <p><i>NOTE: this is a large page, which may or may not cause lag depending on your device, scroll down with caution</i></p>
+   <p><i>NOTE: this is a large page, which may or may not cause lag depending on your device, scroll down with caution</i></p><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
   </div>
  </div>
 </div>
-
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/farta.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest sparta remixes"
+        );
+      });
+     }
+</script>
 <h1>2025</h1><br>
 
 <div class="columns three">

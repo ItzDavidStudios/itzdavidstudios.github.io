@@ -3,15 +3,16 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="david" property="og:title" />
-  <meta content="my own personal website and the things i do i guess, that's all :p" property="og:description" />
-  <meta name="description" content="my own personal website and the things i do i guess, that's all :p">
+  <meta content="music - davidstudios" property="og:title" />
+  <meta content="music done by yours, truly" property="og:description" />
+  <meta name="description" content="music done by yours, truly">
   <title>music for your ears</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
   <link href="comment.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_music.jpg">
 <style>
@@ -39,11 +40,24 @@ body {
    <h1>my epic music that you can listen to!!</h1>
    <p>still perfect for your playlist!</p>
    <p>i am not that great at music but i'm still trying to improve</p>
-   <p>also yes i am aware that i'm so great at naming my songs (totally)</p>
+   <p>also yes i am aware that i'm so great at naming my songs (totally)</p><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
   </div>
  </div>
 </div>
-
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/music.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest music made by david"
+        );
+      });
+     }
+</script>
 <div class="content">
  <div class="content narrow">
   <div class="tile">
