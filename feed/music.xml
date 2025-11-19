@@ -3,6 +3,10 @@
 <channel>
 <generator>Easy Feed Editor</generator>
 <title>music - davidstudios</title>
+<image>
+<url>https://itzdavidstudios.github.io/img/favicon.png</url>
+<link>https://itzdavidstudios.github.io</link>
+</image>
 <description>music done by yours, truly</description>
 <link>https://itzdavidstudios.github.io/music.html</link>
 <language>en-us</language>

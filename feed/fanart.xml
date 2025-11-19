@@ -3,6 +3,10 @@
 <channel>
 <generator>Easy Feed Editor</generator>
 <title>fanart - davidstudios</title>
+<image>
+<url>https://itzdavidstudios.github.io/img/favicon.png</url>
+<link>https://itzdavidstudios.github.io</link>
+</image>
 <description>drawings of my characters made by awesome people</description>
 <link>https://itzdavidstudios.github.io/fanart.html</link>
 <language>en-us</language>
