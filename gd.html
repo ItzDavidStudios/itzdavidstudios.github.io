@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
+  <link href="rss.css" rel="stylesheet" type="text/css" media="all">
  </head>
 <body background="img/bg_gd.jpg">
 <style>
@@ -41,11 +42,24 @@ body {
    <p>feel free to play these levels if you want! (personally i would recommend they are awesome)</p>
    <p>or if you don't have GD installed on your device, you can watch a showcase of them, whatever works</p>
    <p>and again it goes from newest to oldest</p><br>
-   <p>necessary meow</p>
+   <p>necessary meow</p><br>
+   <button id="rssButton" title="copy RSS link to clipboard" class="rss" role="button"><img src="img/feed.png">&nbsp;subscribe to feed</button>
   </div>
  </div>
 </div>
-
+<script>
+  const RSS_SITE_UPDATES = document.getElementById("rssButton");
+    if (RSS_SITE_UPDATES) {
+      RSS_SITE_UPDATES.addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "https://itzdavidstudios.github.io/feed/gd.xml"
+        );
+        alert(
+          "the feed URL has been copied to your clipboard, paste it in a RSS reader app to receive the latest levels i made in this stupid ass 2 dollar square game"
+        );
+      });
+     }
+</script>
 <div class="content">
  <div class="content narrow">
   <div class="tile">
