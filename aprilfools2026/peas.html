@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="peas counter - davidstudios" property="og:title" />
+  <meta content="I HATE PEAS" property="og:description" />
+  <meta name="description" content="I HATE PEAS">
+  <meta content="https://itzdavidstudios.github.io/fanart/gangster.jpg" property="og:image" />
+  <title>this page is useless bruv</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="buttons.css" rel="stylesheet" type="text/css" media="all">
+  <link href="peanuts.css" rel="stylesheet" type="text/css" media="all">
+ </head>
+<body background="img/bg_peas.jpg">
+<style>
+body {
+  background-image: url("img/bg_peas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+ <header></header>
+  <center>
+   <a href="index.html">
+    <img src="img/logo.png" alt="DavidStudios" title="DavidStudios"><br>
+   </a>
+ <a href="index.html"><button type="button" class="frutiger-aero-button medium">Home</button></a>&nbsp;&nbsp;&nbsp;
+ <a href="about.html"><button type="button" class="frutiger-aero-button medium">About</button></a>&nbsp;&nbsp;&nbsp;
+ <a href="socials.html"><button type="button" class="frutiger-aero-button medium">Socials & Contacts</button></a>&nbsp;&nbsp;&nbsp;
+ <a href="stuff.html"><button type="button" class="frutiger-aero-button medium">Random Bullshit</button></a>&nbsp;&nbsp;&nbsp;
+ <a href="news.html"><button type="button" class="frutiger-aero-button medium">News</button></a>&nbsp;&nbsp;&nbsp;
+ <a href="archive.html"><button type="button" class="frutiger-aero-button medium">Archives</button></a>
+
+<div class="content">
+ <div class="content narrow">
+  <div class="tile">
+   <h1>simple peas counter</h1>
+    <p>simply click the button below as much as you can! how much can you do?</p>
+    <p>one of my friends wanted this lol</p><br>
+    <p><i>for some reason the audio that's supposed to play doesn't work on click, will probably fix it soon</i></p><br>
+
+    <button type="button" id="btn" onclick="multipleActions()" class="peas small">i həte you peas</button>
+    <h3>number of peas:</h3>
+    <h2 id="count">0</h2>
+  </div>
+ </div>
+</div>
+<script type="text/javascript">
+    let c = 0, ci = 0, cd = 0;
+    const count = document.getElementById("count");
+    const incCount = document.getElementById("incCount");
+    const decCount = document.getElementById("decCount");
+    function inc() {
+        c++;
+        ci = (ci >= 10) ? 0 : ci + 1;
+        update();
+     }
+     function update() {
+       count.textContent = c;
+       incCount.textContent = ci;
+       decCount.textContent = cd;
+     }
+
+     const audio = audio.play;
+     audio.src="i_hete_you_peas.mp3";
+
+function multipleActions() {
+  inc();
+  audio.play();
+}
+
+</script>
+<footer></footer>
+</center>
+</body>
+</html>
